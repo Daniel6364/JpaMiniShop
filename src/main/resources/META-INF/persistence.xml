@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence" version="2.1">
+    
+    <persistence-unit name="jpaminishop">
+    
+        <properties>
+            
+            <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:9876/jpaminishop"/>
+            <property name="javax.persistence.jdbc.user" value="adminjpa"/>
+            <property name="javax.persistence.jdbc.password" value="adminjpa"/>
+
+
+
+            <property name="hibernate.show_sql" value="true" />
+            <property name="hibernate.format_sql" value="true" />
+            <property name="hibernate.use_sql_comments" value="true" />
+            <property name="hibernate.id.new_generator_mappings" value="true" />
+
+            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL10Dialect"/>
+
+            <!--<property name="hibernate.hbm2ddl.auto" value="create"/>-->
+
+        </properties>
+        
+    </persistence-unit>
+    
+</persistence>
